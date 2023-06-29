@@ -48,7 +48,7 @@ const Footer = () => {
   return (
     <FOOTER>
       <LeftText>
-        © 2023 Built and Designed by Àrtemis
+        © 2023 Built and Designed by Ártemis
       </LeftText>
       <RightText>
         Nos siga nas redes sociais !
