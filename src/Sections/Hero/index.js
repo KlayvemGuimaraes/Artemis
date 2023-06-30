@@ -6,6 +6,7 @@ import pinkBlob from "../../assets/blobPink.png";
 import purpleBlob from "../../assets/blob purple.png";
 import whiteBlob from "../../assets/blob white.png";
 import Mobile from "../../assets/LogoBike.png";
+import arrow from "../../assets/Arrow Right.svg";
 
 const move = keyframes`
 0% { transform: translateY(-5px)  }
@@ -148,6 +149,51 @@ const SubText = styled.h5`
   color: var(--nav2);
 `;
 
+const Button = styled.button`
+  background-color: var(--white);
+  color: #8C52FF;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: calc(0.5rem + 0.5vw);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s;
+
+  a:visited{
+    color: #8C52FF;
+  }
+  a:link{
+    color: #8C52FF;
+  }
+ 
+  img { 
+    width: 1rem;
+  }
+
+  @media only screen and (max-width: 48em) {
+    padding: 0.5rem 1rem;
+
+    a {
+      margin: auto;
+    }
+    img { 
+      width: 0.5rem;
+    }
+  }
+
+  &:hover {
+    color: #8C52FF;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1.4);
+  }
+`;
+
 
 const HeroSection = () => {
   return (
@@ -175,6 +221,12 @@ const HeroSection = () => {
           <SubText>
             EmpreendeSIM 2023
           </SubText>
+          <Button>
+            <a href="https://encurtador.com.br/ehuAV" target ="_blank" rel="noreferrer">
+            Acessar o protótipo&nbsp;
+            <img src={arrow} alt="cta" width="100" height="100"/>
+            </a>
+          </Button >
         </Lb>
         <MobileSvg
           src={Mobile}
