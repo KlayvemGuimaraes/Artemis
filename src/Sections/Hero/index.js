@@ -222,7 +222,7 @@ const HeroSection = () => {
             EmpreendeSIM 2023
           </SubText>
           <Button>
-            <a href="https://encurtador.com.br/ehuAV" target ="_blank" rel="noreferrer">
+            <a href="https://www.figma.com/proto/4tEsUKhaGJJSuWSOVdjaR1/%C3%81rtemis-Prot%C3%B3tipo?type=design&node-id=115-131&t=8DP4i7PmG0ncrE1R-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=115%3A131&mode=design" target ="_blank" rel="noreferrer">
             Acessar o protótipo&nbsp;
             <img src={arrow} alt="cta" width="100" height="100"/>
             </a>
